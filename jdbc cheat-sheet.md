@@ -3,7 +3,7 @@
 First of all, remember that you need to have the sqlite-jdbc jar in your workspace and added as a library to
 the project.
 
-### Create a Connection
+### `Create a Connection`
 
 - Before doing any work, we must create a connection to the database:
 
@@ -14,7 +14,7 @@ Connection con = DriverManager.getConnection(url, username, password);
 
 Replace DATABASELOCATION with the (preferably relative) path to your database file.
 
-### Close a Connection
+### `Close a Connection`
 
 - After finishing working with the database, we must close its connection:
 
@@ -22,7 +22,7 @@ Replace DATABASELOCATION with the (preferably relative) path to your database fi
 con.close();
 ```
 
-### Using Statements
+### `Using Statements`
 
 - Statements can be used to make updates, like this INSERT:
 
@@ -53,7 +53,7 @@ Important note: Statements are not recommended for queries, and they can’t be 
 include anything other than INTEGERs, REALs or TEXTs. In this situations, and when we’re concerned about
 security, we use Prepared Statements.
 
-### Using Prepared Statements
+### `Using Prepared Statements`
 
 - Prepared Statements can be used to make updates, like this INSERT:
 
@@ -85,7 +85,7 @@ Again, when making queries, the results are returned as a Result Set.
   prep.close();
 ```
 
-### Processing Result Sets
+### `Processing Result Sets`
 
 - When making queries, either with Statements or Prepared Statements, the results are returned as a Result Set. We can iterate over a Result Set and access its contents:
 
@@ -137,7 +137,7 @@ Again, when making queries, the results are returned as a Result Set.
   }
 ```
 
-### Manual Commits
+### `Manual Commits`
 
 - By default, JDBC will commit to the database any change in the moment we make it, but we can change this behaviour to manually control when commits are made:
 
