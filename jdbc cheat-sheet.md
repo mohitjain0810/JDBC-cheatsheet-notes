@@ -1,4 +1,4 @@
-### JDBC Cheatsheet
+# JDBC Cheatsheet
 
 First of all, remember that you need to have the sqlite-jdbc jar in your workspace and added as a library to
 the project.
